@@ -15,7 +15,7 @@ const Home = () => {
       <div className="mt-20 px-4">
         <h1 className="text-2xl font-semibold">New Products</h1>
       </div>
-      <div className='grid px-10 mt-5 grid-cols-5 gap-4'>
+      <div className='grid px-10 mt-5 grid-cols-1 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4'>
         
           <ProductCard imgSrc={"https://media.istockphoto.com/id/1252605699/photo/veg-momos-on-black-slate-table-top-momos-is-the-popular-dish-of-indian-tibetan-chinese.webp?a=1&b=1&s=612x612&w=0&k=20&c=qil7GGAkjXOSIu6NB19XIlqAy2CYf4U0arY0c5uy05M="}
           isSale={true}

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8">
+    <footer className="bg-gray-800 text-white py-8 ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -25,14 +25,14 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div>
+          <div className='sm:hidden'>
             <h3 className="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
             <p className="text-sm mb-2">Get the latest updates and offers.</p>
             <form className="flex">
               <input 
                 type="email" 
                 placeholder="Your email" 
-                className="flex-grow p-2 rounded-l-md bg-gray-700 text-white placeholder-gray-400"
+                className="p-2 rounded-l-md bg-gray-700 text-white placeholder-gray-400 "
               />
               <button className="bg-blue-600 p-2 rounded-r-md hover:bg-blue-500">Subscribe</button>
             </form>
