@@ -25,7 +25,7 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className='sm:hidden'>
+          <div className='sm:hidden md:block lg:block xl:block'>
             <h3 className="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
             <p className="text-sm mb-2">Get the latest updates and offers.</p>
             <form className="flex">
