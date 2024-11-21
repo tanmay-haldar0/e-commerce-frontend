@@ -9,9 +9,9 @@ const Home = () => {
       <h1 className="text-2xl font-semibold">New Products</h1>
     </div>
       <div className='grid px-10 mt-5 grid-cols-5 gap-4'>
-        <ProductCard imgSrc={"https://plus.unsplash.com/premium_photo-1719017276454-99ae8306c200?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fG11Z3xlbnwwfHwwfHx8MA%3D%3D"}
+        <ProductCard imgSrc={"https://media.istockphoto.com/id/1050109420/photo/bedmi-poori-daal-kachori.jpg?s=612x612&w=0&k=20&c=8zpScH9IANsomHG4VsPDNq1aJmVXJWKzSrF8Mttwf_Y="}
           isSale={true}
-          productName={"White Coffee Mug"}
+          productName={"Delicious Kochuri"}
           price={49.99}
           salePrice={99.99}
         />

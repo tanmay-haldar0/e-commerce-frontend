@@ -16,7 +16,7 @@ const ProductCard = ({ imgSrc, isSale, productName, price, salePrice }) => {
                 )}
                 {isSale ? (<p className="text-sm mt-1 text-red-500 font-semibold">Flat 50% off</p>):(<p className="text-sm mt-1 text-slate-500 font-semibold">Value for Price</p>)}
                 <div className="flex items-center mt-2">
-                    <button className='btn w-full bg-primary p-2 rounded-md text-white font-medium text-sm'>Buy Now</button>
+                    <button className='btn w-full bg-primary hover:bg-blue-400 p-2 rounded-md text-white font-medium text-sm'>Buy Now</button>
                 </div>
                 {isSale?(<div className="w-10 h-5 rounded-md bg-red-600 flex items-center justify-center absolute top-0 right-0">
                     <p className='text-white text-sm font-medium'>Sale</p>
