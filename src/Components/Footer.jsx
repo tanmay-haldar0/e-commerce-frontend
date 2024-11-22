@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <>
     <div className="w-full bg-slate-700 h-26 p-4">
-    <div className='items-center justify-between lg:flex md:block md:flex lg:block xl:block'>
+    <div className='items-center justify-between lg:flex  md:flex  xl:flex'>
             <h3 className="text-lg text-white font-semibold">Subscribe to Our Newsletter</h3>
             <p className="text-sm text-white">Get the latest updates and offers.</p>
             <form className="flex">
