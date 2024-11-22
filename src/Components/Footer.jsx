@@ -2,7 +2,22 @@ import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-800 text-white py-8 ">
+    <>
+    <div className="w-full bg-slate-700 h-26 p-4">
+    <div className='items-center justify-between lg:flex md:block md:flex lg:block xl:block'>
+            <h3 className="text-lg text-white font-semibold">Subscribe to Our Newsletter</h3>
+            <p className="text-sm text-white">Get the latest updates and offers.</p>
+            <form className="flex">
+              <input
+                type="email"
+                placeholder="Your email"
+                className="p-2 rounded-l-md bg-gray-200 text-white placeholder-gray-400 "
+              />
+              <button className="bg-blue-600 p-2 text-white rounded-r-md hover:bg-blue-500">Subscribe</button>
+            </form>
+          </div>
+    </div>
+    <footer className="bg-gray-800 text-white pt-8 ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {/* Company Info */}
@@ -25,34 +40,24 @@ const Footer = () => {
           </div>
 
           {/* Newsletter Signup */}
-          <div className='sm:hidden md:block lg:block xl:block'>
-            <h3 className="text-lg font-semibold mb-2">Subscribe to Our Newsletter</h3>
-            <p className="text-sm mb-2">Get the latest updates and offers.</p>
-            <form className="flex">
-              <input 
-                type="email" 
-                placeholder="Your email" 
-                className="p-2 rounded-l-md bg-gray-700 text-white placeholder-gray-400 "
-              />
-              <button className="bg-blue-600 p-2 rounded-r-md hover:bg-blue-500">Subscribe</button>
-            </form>
-          </div>
-        </div>
-
-        {/* Social Media Links */}
-        <div className="flex justify-center space-x-4 mt-6">
+           {/* Social Media Links */}
+        <div className="flex justify-center flex-col">
           <a href="https://facebook.com" className="hover:text-gray-400" target="_blank" rel="noopener noreferrer">Facebook</a>
           <a href="https://twitter.com" className="hover:text-gray-400" target="_blank" rel="noopener noreferrer">Twitter</a>
           <a href="https://instagram.com" className="hover:text-gray-400" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="https://linkedin.com" className="hover:text-gray-400" target="_blank" rel="noopener noreferrer">LinkedIn</a>
         </div>
-
-        {/* Copyright Section */}
-        <div className="text-center mt-4 text-sm">
-          <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
         </div>
+
+       
+        {/* Copyright Section */}
+
+      </div>
+      <div className="bg-gray-900 p-3 flex items-center justify-center text-center mt-4 text-md">
+        <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
       </div>
     </footer>
+    </>
   )
 }
 

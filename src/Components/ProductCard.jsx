@@ -2,7 +2,7 @@ import React from 'react'
 
 const ProductCard = ({ imgSrc, isSale, productName, price, salePrice }) => {
     return (
-        <div className="relative border rounded-lg p-2 bg-white shadow-md hover:shadow-xl transition-all ease-out border-slate-300">
+        <div className="relative border rounded-lg p-2 bg-white shadow-md hover:shadow-2xl transition-all ease-out border-slate-300">
             <div className="flex flex-col  justify-between">
                 <div className="">
                     <img src={imgSrc} alt="Product-Img" className='rounded-md w-full bg-slate-200 h-36 object-cover' />
