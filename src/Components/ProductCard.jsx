@@ -1,4 +1,6 @@
 import React from 'react'
+import { FaStar } from "react-icons/fa6";
+import { FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const ProductCard = ({ imgSrc, isSale, productName, price, salePrice }) => {
     return (
@@ -14,6 +16,13 @@ const ProductCard = ({ imgSrc, isSale, productName, price, salePrice }) => {
                 </div>) : (
                     <p className="text-sm font-semibold text-primary">${price}</p>
                 )}
+                <div className="flex items-center text-yellow-500">
+                <FaStar />
+                <FaStar />
+                <FaStar />
+                <FaStarHalfAlt/>
+                <FaRegStar/>
+                </div>
                 {isSale ? (<p className="text-sm mt-1 text-red-500 font-semibold">Flat 50% off</p>):(<p className="text-sm mt-1 text-slate-500 font-semibold">Value for Price</p>)}
                 <div className="flex items-center mt-2">
                     <button className='btn w-full bg-primary hover:bg-blue-400 p-2 rounded-md text-white font-medium text-sm'>Buy Now</button>
