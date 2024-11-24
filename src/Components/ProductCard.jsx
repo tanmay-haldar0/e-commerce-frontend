@@ -4,17 +4,17 @@ import { FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 
 const ProductCard = ({ imgSrc, isSale, productName, price, salePrice }) => {
     return (
-        <div className="relative border rounded-lg p-2 bg-white shadow-md hover:shadow-2xl transition-all ease-out border-slate-300">
-            <div className="flex flex-col  justify-between">
+        <div className="relative rounded-lg p-2 bg-white shadow-md hover:shadow-2xl transition-all ease-out">
+            <div className="flex flex-col justify-between">
                 <div className="">
                     <img src={imgSrc} alt="Product-Img" className='rounded-md w-full bg-slate-200 sm:h-36 h-28 object-cover' />
                 </div>
                 <h3 className="sm:text-md text-sm font-semibold mt-2 ">{productName}</h3>
                 {isSale ? (<div className="flex items">
-                    <p className="sm:text-sm text-xs font-semibold text-primary">${price}</p>
-                    <p className="sm:text-sm text-xs font-semibold text-slate-500 pl-2 line-through">${salePrice}</p>
+                    <p className="sm:text-sm text-xs font-semibold text-primary">₹{price}</p>
+                    <p className="sm:text-sm text-xs font-semibold text-slate-500 pl-2 line-through">₹{salePrice}</p>
                 </div>) : (
-                    <p className="sm:text-sm text-xs font-semibold text-primary">${price}</p>
+                    <p className="sm:text-sm text-xs font-semibold text-primary">₹{price}</p>
                 )}
                 <div className="flex items-center text-yellow-500">
                 <FaStar />

@@ -3,15 +3,14 @@ import { IoCartOutline } from 'react-icons/io5'
 import { MdOutlineKeyboardArrowDown } from 'react-icons/md'
 import { Link } from 'react-router-dom'
 import { MdSearch } from 'react-icons/md'
+import logo from '../assets/logo.png' // Import the logo image
 
 const Navbar = () => {
   return (
-    <div className='w-full fixed  top-0 left-0 py-2 z-50 flex items-center justify-between px-5 shadow-lg bg-white'>
-      <h1 className='text-[14px] sm:text-sm md:text-md lg:text-xl  font-bold'>
-        <Link to={'/'}>E-Commerce</Link>
-      </h1>
+    <div className='w-full fixed top-0 left-0 py-2 z-50 flex items-center justify-between px-5 shadow-lg bg-white'>
+      <Link to={"/"}><img src={logo} alt="Logo" className='h-14 cursor-pointer' /></Link>
 
-      <div className='sm:w-2/5 h-9 rounded-md  items-center relative bg-slate-100 hidden sm:flex md:flex'>
+      <div className='sm:w-2/5 h-12 rounded-md items-center relative bg-slate-100 hidden sm:flex md:flex'>
         <input
           type='text'
           placeholder='Search Here'
@@ -20,12 +19,12 @@ const Navbar = () => {
         <MdSearch className='absolute text-slate-500 right-3 text-xl hover:text-primary' />
       </div>
 
-      <div className='w-auto h-10 flex sm:flex  md:flex items-center justify-center'>
+      <div className='w-auto h-10 flex sm:flex md:flex items-center justify-center'>
         <Link to={'/cart'} className='hidden sm:block md:block'>
           <button className='m-2 group relative rounded-md w-auto h-10 sm:p-2 flex items-center justify-between hover:text-primary'>
             <div className='text-lg m-1 font-medium flex items-center justify-between hover:text-primary'>
-              <IoCartOutline className='text-[25px]  mr-1 text-slate-800 group-hover:text-primary' />
-              <span className='text-sm hidden sm:hidden md:block  text-slate-800 font-medium group-hover:text-primary'>
+              <IoCartOutline className='text-[25px] mr-1 text-slate-800 group-hover:text-primary' />
+              <span className='text-sm hidden sm:hidden md:block text-slate-800 font-medium group-hover:text-primary'>
                 Cart
               </span>
             </div>
@@ -34,13 +33,13 @@ const Navbar = () => {
             </div>
           </button>
         </Link>
-        <button className='p-1 sm:hidden rounded-full w-10 h-10 flex items-center justify-center bg-blue-100  right-3 font-medium text-xl'>
+        <button className='p-1 sm:hidden rounded-full w-10 h-10 flex items-center justify-center bg-blue-100 right-3 font-medium text-xl'>
           <MdSearch />
         </button>
 
         <div className='flex items-center justify-between sm:p-2 cursor-pointer'>
           <div className='m-2 rounded-full w-10 h-10 p-1 flex items-center justify-center bg-blue-100'>
-            <span className='text-sm font-medium '>TH</span>
+            <span className='text-sm font-medium'>TH</span>
           </div>
           <div className='hidden sm:hidden md:flex lg:flex items-center justify-center group cursor-pointer'>
             <h3 className='text-sm font-medium text-slate-800 group-hover:text-primary'>

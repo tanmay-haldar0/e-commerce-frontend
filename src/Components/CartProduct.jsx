@@ -16,7 +16,7 @@ const CartProduct = ({ imgSrc, name, price }) => {
 
   return (
     <>
-      <div className='w-[90vw] sm:w-full h-36 p-1 sm:p-2 flex items-center mb-4 justify-between rounded-lg shadow-md border-2 border-slate-200'>
+      <div className='w-[90vw] bg-white sm:w-full h-36 p-1 sm:p-2 flex items-center mb-4 justify-between rounded-lg shadow-md '>
         <img
           src={imgSrc}
           alt='product-image'
@@ -24,7 +24,7 @@ const CartProduct = ({ imgSrc, name, price }) => {
         />
         <div className='sm:m-5 w-2/5 sm:w-3/5 h-full'>
           <h3 className='text-sm sm:text-lg font-semibold'>{name}</h3>
-          <p className='text-sm sm:text-md text-primary font-semibold'>$ {price}</p>
+          <p className='text-sm sm:text-md text-primary font-semibold'>₹ {price}</p>
           <div className='flex items-center text-yellow-500'>
             <FaStar />
             <FaStar />

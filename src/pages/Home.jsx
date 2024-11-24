@@ -16,7 +16,7 @@ const Home = () => {
     <div className='max-w-[1740px] mx-auto'>
       {/* Category Heading */}
       <h1 className='mt-20 pl-3  sm:pl-10 sm:text-2xl text-lg font-semibold'>Category</h1>
-      <div className='sm:mt-2 sm:px-5  w-full h-28 flex items-center hide-scrollbar overflow-x-auto overflow-y-hidden'>
+      <div className='sm:mt-2 sm:px-8 lg:px-10  w-full h-28 flex items-center hide-scrollbar sm:overflow-x-hidden overflow-x-auto overflow-y-hidden'>
         <CategoryCard
           ctImg={
             'https://media.istockphoto.com/id/511484502/photo/double-cheese-and-bacon-cheeseburger.webp?a=1&b=1&s=612x612&w=0&k=20&c=Us0joN2d51ced9vo3zcDjJLID_p_INwtS2rTa-SLWZQ='
@@ -124,7 +124,7 @@ const Home = () => {
       {/* New Product Heading and grid  */}
       <div className='sm:mt-8 mt-2 sm:pl-10  px-3 flex items-center justify-between'>
             <h1 className='sm:text-2xl text-lg font-semibold'>New Products</h1>
-            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-lg  sm:mr-8">See More<FaArrowRight /></button> </Link>
+            <Link to={"/shop"}>  <button className="btn bg-primary font-medium text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-3xl px-5  sm:mr-8">See More <FaArrowRight className="ml-2" /></button> </Link>
           </div>
       <div className='flex items-center h-full'>
         <div className='grid px-2 sm:px-10 mt-5 grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-4'>
@@ -252,7 +252,7 @@ const Home = () => {
         <div className=''>
           <div className='sm:mt-8 mt-2 sm:pl-10  px-3 flex items-center justify-between'>
             <h1 className='sm:text-2xl text-lg font-semibold'>Popular Products</h1>
-            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-lg  sm:mr-8">See More<FaArrowRight /></button> </Link>
+            <Link to={"/shop"}>  <button className="btn bg-primary font-medium text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-3xl px-5  sm:mr-8">See More <FaArrowRight className="ml-2" /></button> </Link>
           </div>
           <div className='grid px-2 sm:px-10 mt-5 grid-cols-2 md:grid-cols-4 ml lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4'>
             <ProductCard
