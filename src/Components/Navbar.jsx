@@ -8,9 +8,11 @@ import logo from '../assets/logo.png' // Import the logo image
 const Navbar = () => {
   return (
     <div className='w-full fixed top-0 left-0 py-2 z-50 flex items-center justify-between px-5 shadow-lg bg-white'>
-      <Link to={"/"}><img src={logo} alt="Logo" className='h-14 cursor-pointer' /></Link>
+      <div className="flex items-center justify-center h-full">
+      <Link to={"/"}><img src={logo} alt="Logo" className='sm:h-8 h-6 cursor-pointer' /></Link>
+      </div>
 
-      <div className='sm:w-2/5 h-12 rounded-md items-center relative bg-slate-100 hidden sm:flex md:flex'>
+      <div className='sm:w-2/5 h-10 rounded-md items-center relative bg-slate-100 hidden sm:flex md:flex'>
         <input
           type='text'
           placeholder='Search Here'
