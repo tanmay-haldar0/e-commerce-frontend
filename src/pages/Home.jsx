@@ -1,9 +1,10 @@
 import React from 'react'
 import ProductCard from '../Components/ProductCard'
 import Banner from '../Components/Banner'
-import Footer from '../Components/Footer'
 import VBanner from '../Components/VBanner'
 import CategoryCard from '../Components/CategoryCard'
+import { FaArrowRight } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 const Home = () => {
   const bannerUrl =
@@ -121,9 +122,10 @@ const Home = () => {
       </div>
 
       {/* New Product Heading and grid  */}
-      <div className='mt-10 px-4 pl-10'>
-        <h1 className='text-2xl font-semibold'>Popular Products</h1>
-      </div>
+      <div className='mt-8 pl-10 px-2 flex items-center justify-between'>
+            <h1 className='text-2xl font-semibold'>Popular Products</h1>
+            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white flex items-center justify-center p-2 rounded-lg mr-8">See More<FaArrowRight /></button> </Link>
+          </div>
       <div className='flex items-center h-full'>
         <div className='grid px-10 mt-5 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
           <ProductCard
@@ -248,8 +250,9 @@ const Home = () => {
         />
 
         <div className=''>
-          <div className='mt-20 pl-10 px-2'>
+          <div className='mt-8 pl-10 px-2 flex items-center justify-between'>
             <h1 className='text-2xl font-semibold'>Popular Products</h1>
+            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white flex items-center justify-center p-2 rounded-lg mr-8">See More<FaArrowRight /></button> </Link>
           </div>
           <div className='grid px-10 mt-5 grid-cols-1 md:grid-cols-4 ml lg:grid-cols-4 xl:grid-cols-5 gap-4'>
             <ProductCard
