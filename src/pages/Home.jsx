@@ -15,8 +15,8 @@ const Home = () => {
   return (
     <div className='max-w-[1740px] mx-auto'>
       {/* Category Heading */}
-      <h1 className='mt-20  pl-10 text-2xl font-semibold'>Category</h1>
-      <div className='mt-2 px-5 w-full h-28 flex items-center hide-scrollbar overflow-x-auto overflow-y-hidden'>
+      <h1 className='mt-20 pl-3  sm:pl-10 sm:text-2xl text-lg font-semibold'>Category</h1>
+      <div className='sm:mt-2 sm:px-5  w-full h-28 flex items-center hide-scrollbar overflow-x-auto overflow-y-hidden'>
         <CategoryCard
           ctImg={
             'https://media.istockphoto.com/id/511484502/photo/double-cheese-and-bacon-cheeseburger.webp?a=1&b=1&s=612x612&w=0&k=20&c=Us0joN2d51ced9vo3zcDjJLID_p_INwtS2rTa-SLWZQ='
@@ -122,12 +122,12 @@ const Home = () => {
       </div>
 
       {/* New Product Heading and grid  */}
-      <div className='mt-8 pl-10 px-2 flex items-center justify-between'>
-            <h1 className='text-2xl font-semibold'>Popular Products</h1>
-            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white flex items-center justify-center p-2 rounded-lg mr-8">See More<FaArrowRight /></button> </Link>
+      <div className='sm:mt-8 mt-2 sm:pl-10  px-3 flex items-center justify-between'>
+            <h1 className='sm:text-2xl text-lg font-semibold'>New Products</h1>
+            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-lg  sm:mr-8">See More<FaArrowRight /></button> </Link>
           </div>
       <div className='flex items-center h-full'>
-        <div className='grid px-10 mt-5 grid-cols-1 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
+        <div className='grid px-2 sm:px-10 mt-5 grid-cols-2 md:grid-cols-5 lg:grid-cols-5 xl:grid-cols-5 gap-2 sm:gap-4'>
           <ProductCard
             imgSrc={
               'https://media.istockphoto.com/id/1252605699/photo/veg-momos-on-black-slate-table-top-momos-is-the-popular-dish-of-indian-tibetan-chinese.webp?a=1&b=1&s=612x612&w=0&k=20&c=qil7GGAkjXOSIu6NB19XIlqAy2CYf4U0arY0c5uy05M='
@@ -250,11 +250,11 @@ const Home = () => {
         />
 
         <div className=''>
-          <div className='mt-8 pl-10 px-2 flex items-center justify-between'>
-            <h1 className='text-2xl font-semibold'>Popular Products</h1>
-            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white flex items-center justify-center p-2 rounded-lg mr-8">See More<FaArrowRight /></button> </Link>
+          <div className='sm:mt-8 mt-2 sm:pl-10  px-3 flex items-center justify-between'>
+            <h1 className='sm:text-2xl text-lg font-semibold'>Popular Products</h1>
+            <Link to={"/shop"}>  <button className="btn bg-blue-400 text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-lg  sm:mr-8">See More<FaArrowRight /></button> </Link>
           </div>
-          <div className='grid px-10 mt-5 grid-cols-1 md:grid-cols-4 ml lg:grid-cols-4 xl:grid-cols-5 gap-4'>
+          <div className='grid px-2 sm:px-10 mt-5 grid-cols-2 md:grid-cols-4 ml lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4'>
             <ProductCard
               imgSrc={
                 'https://media.istockphoto.com/id/1252605699/photo/veg-momos-on-black-slate-table-top-momos-is-the-popular-dish-of-indian-tibetan-chinese.webp?a=1&b=1&s=612x612&w=0&k=20&c=qil7GGAkjXOSIu6NB19XIlqAy2CYf4U0arY0c5uy05M='
