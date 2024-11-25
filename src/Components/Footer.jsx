@@ -4,6 +4,12 @@ import { MdFacebook } from "react-icons/md";
 import { FaTwitter, FaInstagram, FaSnapchat } from "react-icons/fa";
 
 const Footer = () => {
+  const rupay ="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Rupay-Logo.png/800px-Rupay-Logo.png?20200811062726"
+  const visa = "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Visa_Inc._logo.svg/800px-Visa_Inc._logo.svg.png?20170118154621"
+  const mCard = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/MasterCard_early_1990s_logo.png/800px-MasterCard_early_1990s_logo.png?20170118155024"
+  const upi = "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/UPI-Logo-vector.svg/463px-UPI-Logo-vector.svg.png?20200901100648"
+  const paypal = "https://upload.wikimedia.org/wikipedia/commons/a/a4/Paypal_2014_logo.png?20150315064712"
+
   return (
     <>
       <footer className="bg-gray-800 text-white pt-8 ">
@@ -53,8 +59,21 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-1/5">
+            <div className="w-2/6">
+              <div className="">
+                <ul className="flex justify-center text-sm">
+                  <li className='bg-white h-8 p-2 flex items-center justify-center mr-1 w-16'><img src={upi} className='w-12' alt="rupay" /></li>
+                  <li className='bg-white h-8 p-2 flex items-center justify-center mx-1 w-16'><img src={rupay} className='w-12' alt="rupay" /></li>
+                  <li className='bg-white h-8 p-2 flex items-center justify-center mx-1 w-16'><img src={visa} className='w-12' alt="rupay" /></li>
+                  <li className='bg-white h-8 p-2 flex items-center justify-center mx-1 w-16'><img src={mCard} className='w-12' alt="rupay" /></li>
+                  <li className='bg-white h-8 p-2 flex items-center justify-center mx-1 w-16'><img src={paypal} className='w-7' alt="rupay" /></li>
+
+                </ul>
+              </div>
             </div>
+
+            {/* Payment Types Supported Section */}
+
 
 
           </div>
