@@ -115,6 +115,34 @@ const Home = () => {
       ctImg: 'https://media.istockphoto.com/id/1128295890/photo/mix-berries-with-leaf-various-fresh-berries-isolated-on-white-background-raspberry-blueberry.jpg?s=612x612&w=0&k=20&c=47bMwJ9FRQzMBmEK0tPVmX5sg4CkOI4rgi_xH7X16cA=',
       ctName: 'Fruits',
     },
+    {
+      ctImg: 'https://media.istockphoto.com/id/511484502/photo/double-cheese-and-bacon-cheeseburger.webp?a=1&b=1&s=612x612&w=0&k=20&c=Us0joN2d51ced9vo3zcDjJLID_p_INwtS2rTa-SLWZQ=',
+      ctName: 'Burger',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/622004942/photo/hot-pizza-slice.jpg?s=612x612&w=0&k=20&c=gMZDa3NcObXW5DDQUGmYzxiDuWYpWxJAIkhQm8_BgsI=',
+      ctName: 'Pizza',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/1029369962/photo/dumplings-stuffed-noodles.jpg?s=612x612&w=0&k=20&c=500NQJjDtFXRfkGg_yHuFMQoKXjeb37yqPnBaZ9g2sQ=',
+      ctName: 'Dumplings',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/649708848/photo /photo/coffee.webp?a=1&b=1&s=612x612&w=0&k=20&c=hg90c0_Ef-IJ3CQ61b_4SIG5vxKA689zGhtTH-A9iwM=',
+      ctName: 'Coffee',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/853020286/photo/motichoor-laddu.webp?a=1&b=1&s=612x612&w=0&k=20&c=q6ndetY_1397xqUKbAuJdcXTJchM8DbRe4NI1g360d4=',
+      ctName: 'Laddoo',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/1313630445/photo/colourful-fruit-and-vegetable-salad.jpg?s=612x612&w=0&k=20&c=LGKYHqUiXjASPhJVj5YUuQo86eRfw_uSqbfp_vXC4gQ=',
+      ctName: 'Salad',
+    },
+    {
+      ctImg: 'https://media.istockphoto.com/id/853964590/photo/shahi-paneer-or-paneer-kadai.jpg?s=612x612&w=0&k=20&c=5Td9IzgPaYJAKc95dCiysN8X2R5DlZA3opMKqMh5mzY=',
+      ctName: 'Paneer',
+    },
   ];
 
   const bannerUrl =

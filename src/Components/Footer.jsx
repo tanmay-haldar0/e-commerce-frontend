@@ -14,9 +14,9 @@ const Footer = () => {
     <>
       <footer className="bg-gray-800 text-white pt-8 ">
         <div className="container mx-auto px-4">
-          <div className="flex items-center justify-between">
+          <div className="flex flex-col sm:flex-row items-center justify-between">
             {/* Company Info */}
-            <div className='w-1/4'>
+            <div className='w-full mt-3 sm:w-1/4'>
               <div className="bg-white rounded-lg w-3/4 mb-3"><img src={logo} alt="" className='h-10' /></div>
               <p className="text-xs">
                 We are dedicated to providing the best products and services to our customers. Our mission is to enhance your shopping experience with quality and value.
@@ -47,7 +47,7 @@ const Footer = () => {
             </div>
 
             {/* Quick Links */}
-            <div className='flex flex-col items-center justify-center w-1/4'>
+            <div className='flex flex-col sm:items-center justify-center w-full mt-3 sm:w-1/4'>
               <div className="">
                 <h3 className="text-lg font-medium mb-2">Quick Links</h3>
                 <ul className="space-y-1 text-sm font-normal ">
@@ -59,7 +59,7 @@ const Footer = () => {
               </div>
             </div>
 
-            <div className="w-2/6">
+            <div className="w-full mt-3 sm:w-2/6">
               <div className="">
                 <ul className="flex justify-center text-sm">
                   <li className='bg-white h-8 p-2 flex items-center justify-center mr-1 w-16'><img src={upi} className='w-12' alt="rupay" /></li>
@@ -85,7 +85,7 @@ const Footer = () => {
           {/* Copyright Section */}
 
         </div>
-        <div className="bg-gray-900 p-3 flex items-center justify-center text-center mt-4 text-md">
+        <div className="bg-gray-900 p-3 flex items-center justify-center text-center mt-4 text-xs sm:text-sm">
           <p>&copy; {new Date().getFullYear()} Your Company Name. All rights reserved.</p>
         </div>
       </footer>
