@@ -17,19 +17,19 @@ const Checkout = () => {
 
   return (
     <div className='max-w-[800px] mx-auto p-4 rounded-lg'>
-      <h1 className='text-4xl font-bold text-gray-800 mb-4 text-center'>
+      <h1 className='text-3xl font-semibold text-gray-800 mb-4 text-center'>
         Checkout
       </h1>
 
       {/* Calculation Breakdown */}
       <div className='bg-white '>
-        <table className='min-w-full bg-gray-50 rounded-lg'>
+        <table className='min-w-full bg-gray-50 rounded-xl'>
           <thead>
             <tr className='bg-blue-200 text-gray-700'>
-              <th className='py-3 px-4 text-left'>Item</th>
+              <th className='py-3 rounded-tl-xl px-4 text-left'>Item</th>
               <th className='py-3 px-4 text-left'>Price (₹)</th>
               <th className='py-3 px-4 text-left'>Quantity</th>
-              <th className='py-3 px-4 text-left'>Total (₹)</th>
+              <th className='py-3 rounded-tr-xl px-4 text-left'>Total (₹)</th>
             </tr>
           </thead>
           <tbody className='text-gray-700'>
@@ -49,16 +49,16 @@ const Checkout = () => {
               <td colSpan="3" className='py-3 px-4 text-right'>Delivery Charge:</td>
               <td className='py-3 px-4'>₹{deliveryCharge.toFixed(2)}</td>
             </tr>
-            <tr className='font-bold text-2xl text-primary'>
+            <tr className='font-bold text-2xl text-red-500'>
               <td colSpan="3" className='py-3 px-4 text-right'>Total:</td>
-              <td className='py-3 px-4'>₹{finalTotalPrice}</td>
+              <td className='py-3 px-4 '>₹{finalTotalPrice}</td>
             </tr>
           </tbody>
         </table>
       </div>
 
       {/* Checkout Button */}
-      <div className='flex justify-center mt-8'>
+      <div className='flex justify-center mt-5'>
         <button className='bg-blue-600 text-white font-semibold px-8 py-3 rounded-md shadow-md hover:bg-blue-700 transition duration-200 transform hover:scale-105'>
           Proceed to Payment
         </button>
