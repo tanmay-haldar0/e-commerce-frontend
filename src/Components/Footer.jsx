@@ -3,22 +3,6 @@ import React from 'react'
 const Footer = () => {
   return (
     <>
-    <div className="w-full bg-slate-700 h-26 py-3 px-3 sm:px-12">
-    <div className='items-center justify-between lg:flex  md:flex  xl:flex'>
-            <div className="">
-            <h3 className="text-lg text-white font-semibold">Subscribe to Our Newsletter</h3>
-            <p className="text-sm text-white">Get the latest updates and offers.</p>
-            </div>
-            <form className="flex">
-              <input
-                type="email"
-                placeholder="Your email"
-                className="p-2 rounded-l-md bg-gray-200 text-white placeholder-gray-400 "
-              />
-              <button className="bg-blue-600 p-2 text-white rounded-r-md hover:bg-blue-500">Subscribe</button>
-            </form>
-          </div>
-    </div>
     <footer className="bg-gray-800 text-white pt-8 ">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
