@@ -7,12 +7,12 @@ const Cart = () => {
   const noCartItem = false
   return (
     <div className='max-w-[1740px] mx-auto'>
-      <h1 className='text-xl sm:text-3xl p-4 ml-1 sm:ml-5 font-semibold  mt-16 text-slate-800'>
+      <h1 className='text-xl sm:text-3xl pl-4 pt-2 ml-1 sm:ml-5 font-semibold  mt-16 text-slate-800'>
         Cart
       </h1>
 
       {!noCartItem /* Full Cart */ ? (
-        <div className='flex flex-col md:ml-5 items-center justify-between p-3 sm:p-4 md:flex-row sm:flex-col'>
+        <div className='flex flex-col md:ml-5 h-full items-center justify-between sm:p-2 md:flex-row sm:flex-col'>
           <div className='w-3/5 flex flex-col items-center justify-center'>
             <CartProduct
               imgSrc={
