@@ -3,7 +3,7 @@ import { FaStar } from "react-icons/fa6";
 import { FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
 
-const CartProduct = ({ imgSrc, name, price }) => {
+const CartProduct = ({ imgSrc, name, price, rating }) => {
   const [quantity, setQuantity] = useState(1);
 
   const increaseQuantity = () => {
@@ -12,6 +12,33 @@ const CartProduct = ({ imgSrc, name, price }) => {
 
   const decreaseQuantity = () => {
     setQuantity(prevQuantity => (prevQuantity > 1 ? prevQuantity - 1 : 1));
+  };
+
+  const renderStars = (rating) => {
+
+    if (!rating) {
+      rating = 4.5;
+    }
+    const stars = [];
+    const fullStars = Math.floor(rating);
+    const hasHalfStar = rating % 1 !== 0;
+
+    // Add full stars
+    for (let i = 0; i < fullStars; i++) {
+      stars.push(<FaStar key={`full-${i}`} />);
+    }
+
+    // Add half star if applicable
+    if (hasHalfStar) {
+      stars.push(<FaStarHalfAlt key="half" />);
+    }
+
+    // Add empty stars to make a total of 5 stars
+    for (let i = stars.length; i < 5; i++) {
+      stars.push(<FaRegStar key={`empty-${i}`} />);
+    }
+
+    return stars;
   };
 
   return (
@@ -26,19 +53,15 @@ const CartProduct = ({ imgSrc, name, price }) => {
           <h3 className='text-sm sm:text-lg font-semibold'>{name}</h3>
           <p className='text-sm sm:text-md text-primary font-semibold'>₹ {price}</p>
           <div className='flex items-center text-yellow-500'>
-            <FaStar />
-            <FaStar />
-            <FaStar />
-            <FaStarHalfAlt />
-            <FaRegStar />
+            {renderStars(rating)}
           </div>
           <div className='flex items-center mt-2'>
             <button onClick={decreaseQuantity} className='px-2 py-1 bg-primary text-white rounded-md'>-</button>
-            <input 
-              type='text' 
-              value={quantity} 
-              readOnly 
-              className='mx-2 w-12 text-center border rounded-md' 
+            <input
+              type='text'
+              value={quantity}
+              readOnly
+              className='mx-2 w-12 text-center border rounded-md'
             />
             <button onClick={increaseQuantity} className='px-2 py-1 bg-primary text-white rounded-md'>+</button>
           </div>

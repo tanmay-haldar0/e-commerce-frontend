@@ -4,7 +4,7 @@ const Checkout = () => {
   const cartItems = [
     { name: 'Medium Sized Pizza', price: 69.49, quantity: 2 },
     { name: 'Large Burger', price: 29.49, quantity: 1 },
-    { name: 'Veg Dumplings', price: 49.99, quantity: 3 },
+    { name: 'Veg Dumplings', price: 49.99, quantity: 3 }
   ];
 
   const deliveryCharge = 50.00;
