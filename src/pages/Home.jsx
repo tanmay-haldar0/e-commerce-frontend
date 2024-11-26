@@ -92,7 +92,7 @@ const Home = () => {
       ctName: 'Dumplings',
     },
     {
-      ctImg: 'https://media.istockphoto.com/id/649708848/photo /photo/coffee.webp?a=1&b=1&s=612x612&w=0&k=20&c=hg90c0_Ef-IJ3CQ61b_4SIG5vxKA689zGhtTH-A9iwM=',
+      ctImg: 'https://media.istockphoto.com/id/1174632449/photo/side-view-of-hot-latte-coffee-with-latte-art-in-a-ceramic-green-cup-and-saucer-isolated-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=61FLuInL5v9dVRMbaGXUOLZBluqvBulRSiCsphy38Y0=',
       ctName: 'Coffee',
     },
     {
@@ -128,7 +128,7 @@ const Home = () => {
       ctName: 'Dumplings',
     },
     {
-      ctImg: 'https://media.istockphoto.com/id/649708848/photo /photo/coffee.webp?a=1&b=1&s=612x612&w=0&k=20&c=hg90c0_Ef-IJ3CQ61b_4SIG5vxKA689zGhtTH-A9iwM=',
+      ctImg: 'https://media.istockphoto.com/id/1174632449/photo/side-view-of-hot-latte-coffee-with-latte-art-in-a-ceramic-green-cup-and-saucer-isolated-on.webp?a=1&b=1&s=612x612&w=0&k=20&c=61FLuInL5v9dVRMbaGXUOLZBluqvBulRSiCsphy38Y0=',
       ctName: 'Coffee',
     },
     {
@@ -145,15 +145,13 @@ const Home = () => {
     },
   ];
 
-  const bannerUrl =
-    'https://media.istockphoto.com/id/2155449784/photo/vesak-lanterns-at-night-with-light-bokeh-in-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=D4LuhWzh-KMTegWRQcwRgrZfnI7nf4Ek4IL4gkk_hcg='
   const bannerUrl2 =
     'https://media.istockphoto.com/id/2055023629/photo/4k-beautiful-color-gradient-background-with-noise-abstract-pastel-holographic-blurred-grainy.jpg?s=612x612&w=0&k=20&c=l65_0xqN76oYzun9lKf_abnquQ7i8HF3pGkCnVbPKsE='
 
   return (
     <div className='max-w-[1740px] mx-auto'>
       <Carousel />
-      
+
       {/* Category Heading */}
       <h1 className='mt-5 pl-3 sm:pl-10 sm:text-2xl text-lg font-semibold'>Category</h1>
       <div className='sm:mt-2 sm:px-8 lg:px-10 w-full h-28 flex items-center hide-scrollbar sm:overflow-x-hidden overflow-x-auto overflow-y-hidden'>
@@ -199,7 +197,7 @@ const Home = () => {
 
       {/* Sale Banner */}
       <Banner
-        bannerUrl={bannerUrl}
+        bannerUrl={bannerUrl2}
         bannerTitle={'Sale! 50% Off on most of the Products'}
         bannerDescription={'Experience the best deals in your favorite e-commerce store'}
       />
@@ -215,7 +213,7 @@ const Home = () => {
         />
 
         <div className=''>
-          <div className='sm:mt-8 mt-2 sm:pl-10 px-3 flex items-center justify-between'>
+          <div className='sm:mt-5 mt-2 sm:pl-10 px-3 flex items-center justify-between'>
             <h1 className='sm:text-2xl text-lg font-semibold'>Popular Products</h1>
             <Link to={"/shop"}>
               <button className="btn bg-primary font-medium text-white text-sm sm:text-md flex items-center justify-center p-2 rounded-3xl px-5 sm:mr-8">
@@ -223,7 +221,7 @@ const Home = () => {
               </button>
             </Link>
           </div>
-          <div className='grid px-2 sm:px-10 mt-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4'>
+          <div className='grid px-2 sm:px-10 mb-8 mt-5 grid-cols-2 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-5 gap-2 sm:gap-4'>
             {products.map((product, index) => (
               <ProductCard
                 key={index}
@@ -237,13 +235,6 @@ const Home = () => {
           </div>
         </div>
       </div>
-
-      {/* Sale Banner */}
-      <Banner
-        bannerUrl={bannerUrl2}
-        bannerTitle={'Sale! 50% Off on most of the Products'}
-        bannerDescription={'Experience the best deals in your favorite e-commerce store'}
-      />
     </div>
   );
 }
