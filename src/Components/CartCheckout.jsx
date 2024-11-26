@@ -69,7 +69,7 @@ const Checkout = () => {
           <div className='p-4 border-t border-gray-300'>
             <p className='text-right'>Delivery Charge: ₹{deliveryCharge.toFixed(2)}</p>
           </div>
- <div className='font-bold text-2xl text-red-500 p-4 border-t border-gray-300'>
+          <div className='font-bold text-2xl text-red-500 p-4 border-t border-gray-300'>
             <p className='text-right'>Total: ₹{finalTotalPrice}</p>
           </div>
         </div>
