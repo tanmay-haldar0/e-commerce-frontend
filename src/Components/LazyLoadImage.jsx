@@ -36,7 +36,7 @@ const LazyLoadImage = ({ src, alt, className }) => {
       src={isVisible ? src : undefined}
       alt={alt}
       className={className}
-      style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.5s' }}
+      style={{ opacity: isVisible ? 1 : 0, transition: 'opacity 0.3s' }}
     />
   );
 };

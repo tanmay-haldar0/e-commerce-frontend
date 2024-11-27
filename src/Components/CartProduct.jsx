@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { FaStar } from "react-icons/fa6";
 import { FaStarHalfAlt, FaRegStar } from "react-icons/fa";
 import { IoCloseSharp } from "react-icons/io5";
+import LazyLoadImage from './LazyLoadImage';
 
 const CartProduct = ({ imgSrc, name, price, rating }) => {
   const [quantity, setQuantity] = useState(1);
@@ -44,11 +45,7 @@ const CartProduct = ({ imgSrc, name, price, rating }) => {
   return (
     <>
       <div className='w-[90vw] bg-white sm:w-full h-36 p-1 sm:p-2 flex items-center mb-4 justify-between rounded-lg shadow-md '>
-        <img
-          src={imgSrc}
-          alt='product-image'
-          className='object-cover w-2/5 sm:w-1/5 h-full rounded-md'
-        />
+        <LazyLoadImage src={imgSrc} alt={name} className='object-cover w-2/5 sm:w-1/5 h-full rounded-md' />
         <div className='sm:m-5 w-2/5 sm:w-3/5 h-full'>
           <h3 className='text-sm sm:text-lg font-semibold'>{name}</h3>
           <p className='text-sm sm:text-md text-primary font-semibold'>₹ {price}</p>
