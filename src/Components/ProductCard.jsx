@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaStar, FaStarHalfAlt, FaRegStar } from "react-icons/fa";
+import LazyLoadImage from './LazyLoadImage';
 
 const ProductCard = ({ imgSrc, isSale, productName, price, salePrice, rating }) => {
     const renderStars = (rating) => {
@@ -33,7 +34,7 @@ const ProductCard = ({ imgSrc, isSale, productName, price, salePrice, rating }) 
         <div className="relative rounded-lg p-2 bg-white shadow-md hover:shadow-2xl transition-all ease-out">
             <div className="flex flex-col justify-between">
                 <div className="">
-                    <img src={imgSrc} alt="Product-Img" className='rounded-md w-full bg-slate-200 sm:h-36 h-28 object-cover' />
+                <LazyLoadImage src={imgSrc} alt={productName} className='rounded-md w-full bg-slate-200 sm:h-36 h-28 object-cover' />
                 </div>
                 <h3 className="sm:text-md text-sm font-semibold mt-2 ">{productName}</h3>
                 {isSale ? (
