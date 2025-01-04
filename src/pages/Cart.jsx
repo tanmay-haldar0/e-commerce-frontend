@@ -2,6 +2,7 @@ import React from 'react'
 import { TbShoppingBagPlus } from 'react-icons/tb'
 import CartProduct from '../Components/CartProduct'
 import CartCheckout from '../Components/CartCheckout'
+import Footer from '../Components/Footer.jsx'
 
 const Cart = () => {
   const product = [
@@ -62,6 +63,7 @@ const Cart = () => {
           </div>
         </div>
       )}
+      <Footer/>
     </div>
   )
 }

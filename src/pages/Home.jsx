@@ -6,6 +6,7 @@ import CategoryCard from '../Components/CategoryCard';
 import Carousel from '../Components/Carousel';
 import { FaArrowRight } from "react-icons/fa";
 import { Link } from 'react-router-dom';
+import Footer from '../Components/Footer.jsx'
 
 const Home = () => {
   const products = [
@@ -234,6 +235,7 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <Footer/>
     </div>
   );
 }
