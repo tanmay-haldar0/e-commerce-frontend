@@ -6,7 +6,7 @@ import { MdSearch } from 'react-icons/md'
 import logo from '../assets/logo.png' // Import the logo image
 
 const Navbar = () => {
-  let signedIn = false;
+  let signedIn = true;
 
   return (
     <div className='w-full fixed top-0 left-0 py-2 z-50 flex items-center justify-between px-5 shadow-lg bg-white'>
