@@ -10,13 +10,13 @@ const ProductPage = () => {
   const [review, setReview] = useState('')
   const [reviews, setReviews] = useState([
     {
-      text: 'Great Product',
+      text: 'Great Product , Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, quae nisi.', 
       rating: 4.5,
       userName: 'User1',
       userImage: 'https://placehold.co/500'
     },
     {
-      text: 'Good Quality',
+      text: 'Good Quality, Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, quae nisi.',
       rating: 4,
       userName: 'User2',
       userImage: 'https://placehold.co/500'
